@@ -1,0 +1,193 @@
+video#bvideo{
+    position: fixed;
+    z-index:1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+
+img.logo_image_blurred{
+    position:absolute;
+    z-index:2;
+    top:10%;
+    right:5%;
+    height:500px;
+    animation: float 6s ease-in-out infinite;
+    transition: .2s;
+    width:auto;
+}
+
+img.logo_image{
+    position:absolute;
+    z-index:3;
+    top:10%;
+    right:5%;
+    height:500px;
+    transition: 1s;
+    animation: float 6s ease-in-out infinite;
+    width:auto;
+}
+
+img.hidden{
+    opacity:0;
+}
+
+div#overlay{
+    position: fixed;
+    z-index:3;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    background-image:linear-gradient(60deg, rgba(0,0,0,.8), rgba(0,0,0,.5))
+}
+
+div#main-container{
+    z-index:3;
+    color:#FFF;
+}
+
+div.text{
+    position: absolute;
+    z-index:4;
+    margin-top:10px;
+    margin-left:20px;
+    width:90%;
+    height:auto;
+    font-size:40px;
+    color:#fff;
+    font-family: 'Quantico', sans-serif;
+}
+
+div.text .title{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    color:rgba(50,50,50,.4);
+}
+
+div.text .title:after{
+    content: "Ryan Stevens Philbert";
+    position:absolute;
+    left:10px;
+    top:0px;
+    color:rgba(120,120,120,.4);
+}
+
+div.text .mini{
+    position:absolute;
+    top:140px;
+    left:0;
+    opacity:.2;
+}
+
+@media screen and (max-width:1000px) {
+    div.text{
+        display:none;
+    }
+}
+
+div.text .main{
+    position:absolute;
+    top:140px;
+    left:10%;
+    font-family: 'Kaushan Script', cursive;
+    font-size:100px;
+    width:100%;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes float {
+	0% {transform: translatey(0px)}
+	50% {transform: translatey(-20px)}
+	100% {transform: translatey(0px)}
+}
+
+/* PAGE LOADER */
+
+.loader-overlay{
+    position: fixed;
+    z-index:5;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    background-color:#202020;
+}
+
+.lds-grid {
+    margin:20% 10% 10% 50%;
+    display: inline-block;
+    position: relative;
+    z-index:5;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-grid div {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation: lds-grid 1.2s linear infinite;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 6px;
+    left: 6px;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 6px;
+    left: 26px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 6px;
+    left: 45px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    top: 26px;
+    left: 6px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    top: 26px;
+    left: 26px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    top: 26px;
+    left: 45px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 45px;
+    left: 6px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 45px;
+    left: 26px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 45px;
+    left: 45px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+ /* END OF PAGE LOADER */  
