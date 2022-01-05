@@ -38,8 +38,8 @@ body a:hover
 
 .doc-loader img
 {
-    width: 90px;
-    height: 90px;        
+    width: 300px;
+    height: auto;        
 }
 
 .content-1170
