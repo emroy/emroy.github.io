@@ -1109,10 +1109,10 @@ footer
 
 #portfolio-1
 {
-    background-color: #221c5a;
-    background-image:url("demo-images/background_img_05b.jpg"); 
+    background-color: black;
+    background-image:url("demo-images/Background_img02b.png"); 
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: right top;
     background-size: auto; 
 }
 
