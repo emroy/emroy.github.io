@@ -1109,8 +1109,7 @@ footer
 
 #portfolio-1
 {
-    background-color: black;
-    background-image:url("demo-images/Background_img02b.png"); 
+    background-color: #221C5A;
     background-repeat: no-repeat;
     background-position: right top;
     background-size: auto; 
@@ -1120,7 +1119,6 @@ footer
 {
 
     background-color: #221c5a;
-    background-image: url(demo-images/item_background_01.jpg);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 100% auto;
