@@ -294,7 +294,7 @@ main > section + section {
 }
 
 section {
-  scroll-margin-top: 6.5rem;
+  scroll-margin-top: 6rem;
 }
 
 h2 {
@@ -488,6 +488,16 @@ h3 {
   .contact-list div {
     grid-template-columns: 1fr;
     gap: 0.15rem;
+  }
+
+  section {
+    scroll-margin-top: 8.5rem;
+  }
+}
+
+@media (max-width: 340px) {
+  section {
+    scroll-margin-top: 12rem;
   }
 }
 
