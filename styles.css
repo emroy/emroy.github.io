@@ -157,6 +157,7 @@ main {
 
 body:has(#about:target) a[href="#about"],
 body:has(#work:target) a[href="#work"],
+body:has(#stack:target) a[href="#stack"],
 body:has(#projects:target) a[href="#projects"],
 body:has(#contact:target) a[href="#contact"] {
   color: var(--purple);
@@ -374,6 +375,27 @@ h3 {
   margin: 0;
 }
 
+.work-list p {
+  color: var(--muted);
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.stack li {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--bg-raised);
+  color: var(--text);
+}
+
 .projects {
   display: grid;
   gap: 1rem;
@@ -416,10 +438,12 @@ h3 {
 
 .meta {
   margin: 0 0 0.7rem;
+  color: var(--muted);
   font-size: 0.85rem;
 }
 
 .project p:last-child {
+  max-width: 62ch;
   margin: 0;
 }
 
@@ -486,6 +510,10 @@ h3 {
   .projects {
     grid-template-columns: 1fr 1fr;
   }
+
+  .projects li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 640px) {
@@ -511,7 +539,7 @@ h3 {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 400px) {
   section {
     scroll-margin-top: 12rem;
   }
