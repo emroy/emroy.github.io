@@ -472,11 +472,21 @@ h3 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.55rem;
   margin: 0.95rem 0 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: 900px) {
+  .case:nth-child(1) .gallery {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .case:nth-child(2) .gallery {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
 
 .thumb {
