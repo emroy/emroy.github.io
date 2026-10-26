@@ -480,13 +480,16 @@ h3 {
 }
 
 @media (min-width: 900px) {
-  .case:nth-child(1) .gallery {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
   }
+}
 
-  .case:nth-child(2) .gallery {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
+.case > p.shot-note {
+  max-width: 68ch;
+  margin: 0.6rem 0 0;
+  color: var(--faint);
+  font-size: 0.78rem;
 }
 
 .thumb {
